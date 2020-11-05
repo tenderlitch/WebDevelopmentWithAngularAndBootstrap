@@ -14,6 +14,9 @@ import { EditListingComponent } from './edit-listing/edit-listing.component';
 import { PreviewListingComponent } from './preview-listing/preview-listing.component';
 import { PhotosComponent } from './photos/photos.component';
 import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
+import { EditPhotoComponent } from './edit-photo/edit-photo.component';
+import { PreviewPhotoComponent } from './preview-photo/preview-photo.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
     EditListingComponent,
     PreviewListingComponent,
     PhotosComponent,
-    UploadPhotoComponent
+    UploadPhotoComponent,
+    EditPhotoComponent,
+    PreviewPhotoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
