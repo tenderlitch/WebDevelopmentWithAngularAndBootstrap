@@ -17,9 +17,23 @@ import { UploadPhotoComponent } from './upload-photo/upload-photo.component';
 import { EditPhotoComponent } from './edit-photo/edit-photo.component';
 import { PreviewPhotoComponent } from './preview-photo/preview-photo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ListingDetailsComponent } from './listing-details/listing-details.component';
+import { CrudComponent } from './crud/crud.component';
+import { FeaturesComponent } from './features/features.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { AboutComponent } from './about/about.component';
+import { SupportComponent } from './support/support.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { PhotoListingComponent } from './photo-listing/photo-listing.component';
+import { DadComponent } from './child/Dad.component';
+import { SonComponent } from './child/Son.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PlaygroundComponent } from './playground/playground.component';
+import { NgbCollapseComponent } from './ngb-collapse/ngb-collapse.component';
+import { NgbModalComponent } from './ngb-modal/ngb-modal.component';
 
 @NgModule({
-  declarations: [
+  declarations: [//这里是声明模块内组件的地方
     AppComponent,
     HomeComponent,
     SignupComponent,
@@ -34,11 +48,25 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     UploadPhotoComponent,
     EditPhotoComponent,
     PreviewPhotoComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ListingDetailsComponent,
+    CrudComponent,
+    FeaturesComponent,
+    PricingComponent,
+    AboutComponent,
+    SupportComponent,
+    PhotoListingComponent,
+    DadComponent,
+    SonComponent,
+    PlaygroundComponent,
+    NgbCollapseComponent,
+    NgbModalComponent
   ],
-  imports: [
+  imports: [//这里是引入外部模块的地方
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

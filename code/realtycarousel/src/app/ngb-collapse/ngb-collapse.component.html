@@ -1,0 +1,10 @@
+<p>
+    <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed">
+        {{ isCollapsed?"Show":"Hide"}} Instructions
+    </button>
+</p>
+<div id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div class="card">
+        These are the hypothetical instructions from something.
+    </div>
+</div>
