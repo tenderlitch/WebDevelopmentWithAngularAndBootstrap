@@ -31,6 +31,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PlaygroundComponent } from './playground/playground.component';
 import { NgbCollapseComponent } from './ngb-collapse/ngb-collapse.component';
 import { NgbModalComponent } from './ngb-modal/ngb-modal.component';
+import { NgbCarouselComponent } from './ngb-carousel/ngb-carousel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [//这里是声明模块内组件的地方
@@ -60,13 +62,15 @@ import { NgbModalComponent } from './ngb-modal/ngb-modal.component';
     SonComponent,
     PlaygroundComponent,
     NgbCollapseComponent,
-    NgbModalComponent
+    NgbModalComponent,
+    NgbCarouselComponent
   ],
   imports: [//这里是引入外部模块的地方
     BrowserModule,
     AppRoutingModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

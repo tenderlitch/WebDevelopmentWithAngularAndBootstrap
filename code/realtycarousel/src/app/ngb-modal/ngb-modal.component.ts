@@ -19,7 +19,6 @@ export class NgbModalComponent{
     }
 
     private getDismissReasion(reason:any):string{
-        debugger;
         if(reason===ModalDismissReasons.ESC){
             return 'by pressing ESC';
         }else if(reason===ModalDismissReasons.BACKDROP_CLICK){
